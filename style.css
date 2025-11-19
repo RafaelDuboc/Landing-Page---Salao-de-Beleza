@@ -1,0 +1,388 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Altere para uma fonte mais elegante */
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 1. Cabeçalho */
+header {
+    background-color: #fff; /* Fundo branco */
+    color: #5d4037; /* Cor do texto/logo */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #e91e63; /* Cor de destaque no hover */
+}
+
+/* 2. Seção Hero */
+.hero {
+    background: url('people-2583493_1280.jpg') no-repeat center center/cover;
+    height: 60vh; /* Altura da seção */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Texto branco sobre a imagem */
+    position: relative;
+}
+
+/* Overlay escuro para melhorar a leitura do texto */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Captura\ de\ tela\ 2025-11-11\ 192759.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero-content {
+    z-index: 1;
+    
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+     text-shadow: 2px 2px 2px #090909;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color:white;
+    text-shadow: 2px 2px 2px #090909;
+}
+
+.cta-button {
+    background-color: #e91e63; /* Botão de Chamada para Ação */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c2185b;
+}
+
+/* Seções Padrão */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #5d4037;
+}
+
+/* 3. Seção de Serviços */
+.servicos {
+    background-color: #fff;
+}
+
+.servicos-grid {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.servico-card {
+    
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    display: none;
+    background: url('people-2583493_1280.jpg') no-repeat center center/cover;
+    
+}
+
+#hair{
+    background: url('hair-1838728_1280.jpg') no-repeat center center/cover;
+}
+#mechas{
+    background: url('hairdressing-4057094_1280.jpg') no-repeat center center/cover;
+}
+#mani{
+    background: url('nail-art-5653459_1280.jpg') no-repeat center center/cover;
+}
+#hidra{
+    background: url('hairdressing-1516352_1280.jpg') no-repeat center center/cover;
+}
+
+
+.servico-card.active { 
+    color: white;
+    border: 1px solid #b4a9a9; /* Borda destacada */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transform: none; /* Garante que não haja transformações indesejadas */
+    display: block; /* Torna-o visível */
+    text-shadow: 1px 1px black;
+}
+
+button{
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 0.5rem;
+    
+}
+
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* 4. Depoimentos */
+.depoimentos {
+    background-color: #f1e7e5; /* Fundo suave */
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.depoimento-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    min-width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.depoimento-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.depoimento-card span {
+    display: block;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+/* 5. Botão de Contato Principal */
+.contato-principal {
+    background-color: #5d4037; /* Cor de fundo escura para contraste */
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.contato-principal h2 {
+    color: #fff;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* 6. Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.rodape-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.redes-sociais a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #e91e63;
+}
+
+/* --- Estilização do Formulário de Depoimento --- */
+
+.formulario-depoimento-container {
+    max-width: 600px;
+    margin: 60px auto 0; /* Espaçamento após os cards de depoimento */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+.formulario-depoimento-container h3 {
+    text-align: center;
+    color: #e91e63;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.aviso-form {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #5d4037;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e91e63;
+    outline: none;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.3);
+}
+
+.submit-depoimento {
+    /* Reutiliza o estilo do cta-button, mas centraliza no container */
+    display: block; 
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+}
+
+.indicators{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.dot{
+    margin-left: 10px;
+    background-color: #b9b5b7;
+    width: 40px;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.dot.active{
+    background-color: #090909;
+     width: 40px;
+     height: 4px;
+    
+
+}
+
+.number{
+  display: none;
+  font-weight: 800;
+}
+
+.number.active {
+    display: block;
+
+}

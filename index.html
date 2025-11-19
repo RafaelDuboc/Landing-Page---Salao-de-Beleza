@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Beauty Prime - Seu Novo Visual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Beauty Prime</h1> </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato-principal">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Transforme seu Look com Estilo e Sofisticação.</h2>
+            <p>Os melhores profissionais e produtos de alta qualidade esperam por você.</p>
+            <a href="#contato-principal" class="cta-button">✨ AGENDE AGORA SUA VISITA</a>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid">
+            <div class="btnp">
+                <button id="btn-prev">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+</svg>
+
+                </button>
+            </div>
+            <div class="servico-card active" id="hair">
+                <h3>Cortes e Penteados</h3>
+                <p>Do clássico ao moderno, encontre o corte perfeito para você.</p>
+            </div>
+            <div class="servico-card" id="mechas">
+                <h3>Coloração e Mechas</h3>
+                <p>Técnicas avançadas para cores vibrantes e duradouras.</p>
+            </div>
+            <div class="servico-card" id="mani">
+                <h3>Manicure e Pedicure</h3>
+                <p>Cuidado completo para suas mãos e pés.</p>
+            </div>
+            <div class="servico-card" id="hidra">
+                <h3>Tratamentos Capilares</h3>
+                <p>Hidratação profunda, reconstrução e nutrição dos fios.</p>
+            </div>
+            <div>
+                <button class="btn-next" id="btn-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+</svg>
+                </button>
+            </div>
+        </div>
+        <div class="indicators">
+            <div class="numbers">
+                <p class="number active">01</p>
+                <p class="number">02</p>
+                <p class="number">03</p>
+                <p class="number">04</p>
+            </div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que nossas clientes dizem</h2>
+        <div class="depoimentos-container">
+            <div class="depoimento-card">
+                <p>"Atendimento impecável! Saí do salão me sentindo renovada e linda. Recomendo muito!"</p>
+                <span>- Maria S.</span>
+            </div>
+            <div class="depoimento-card">
+                <p>"O melhor lugar para fazer mechas em Feira de Santana. Profissionais super atenciosos."</p>
+                <span>- Joana R.</span>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+        
+        <div class="formulario-depoimento-container">
+            <h3>Deixe seu Depoimento e Opinião</h3>
+            <p class="aviso-form">* Seu e-mail não será publicado, apenas nome e depoimento.</p>
+            <form id="depoimentoForm" action="https://formspree.io/f/xnnlqbda" method="POST">
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Seu Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="depoimento">Seu Depoimento:</label>
+                    <textarea id="depoimento" name="depoimento" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button submit-depoimento">Enviar Depoimento</button>
+                
+                </form>
+        </div>
+        
+    </section>
+    </section>
+
+    <section id="contato-principal" class="contato-principal">
+        <h2>Pronta para a Transformação?</h2>
+        <a href="https://wa.me/SEUNUMERO" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp
+        </a>
+    </section>2
+
+    <footer>
+        <div class="rodape-content">
+            <p>&copy; 2025 Beauty Prime. Todos os direitos reservados.</p>
+            <div class="redes-sociais">
+                <a href="LINK_DO_INSTAGRAM" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="LINK_DO_FACEBOOK" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/SEUNUMERO" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+<script src="js.js">
+
+
+</script>
+</body>
+</html>
